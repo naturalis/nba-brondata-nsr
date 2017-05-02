@@ -13,7 +13,7 @@ for i in $filelist
 do
     tempstate=0
     echo zipping $i
-    gzip -c $i | split -d -b 95M - $i.gz.
+    gzip --rsyncable -c $i | split -d -b 95M - $i.gz.
      tempstate=$?
     if [ "$tempstate" != 0 ] ; then $state=1 ; fi
 done
