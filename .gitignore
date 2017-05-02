@@ -1,0 +1,6 @@
+*
+!README.md
+!filelist
+!*.sh
+!*.gz.*
+!.gitignore
