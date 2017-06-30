@@ -21,7 +21,7 @@ done
 state=$?
 if [ "$state == 0" ]
 then
-    echo compression succeced, cleaning up
+    echo compression succeded, cleaning up
     for i in $filelist; do rm $i ; done
 else
     echo compression failed, reverting to previous state
